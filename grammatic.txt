@@ -1,0 +1,10 @@
+<expr> ::= <positive> | <negative>
+<positive> = <term> | <term> + <term> | <term> - <term>
+<negative> = -<term>
+<term> ::= <factor> * <factor> | <factor> / <factor> | <factor>
+<factor> ::= <roman> | (<expr>)
+<roman> ::= <letter> | <roman M><roman CDM><roman CLX><roman IVX>
+<roman CDM> = _ | CM | CD | D | DC | DCC | DCCC
+<roman CLX> = _ | XC | XL | L | LX | LXX | LXXX
+<roman IVX> = _ | IX| IV| V| VI| VII| VIII
+<letter>:: = _ | I | V | X | L | C | D | M | Z
