@@ -38,5 +38,5 @@ func Div64(left, right int64) (int64, error) {
 	if right == 0 {
 		return 0, errors.New("error: Cannot divide by zero")
 	}
-	return left / right, nil
+	return int64(math.Floor(float64(left) / float64(right))), nil
 }
